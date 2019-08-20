@@ -1,0 +1,13 @@
+@mixin mobile-boxing {
+  margin: 0 auto;
+  width: calc(100vw - 16px);
+  max-width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@mixin flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
