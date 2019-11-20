@@ -1,6 +1,7 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 @import "_logo.scss";
+@import "_mobile-menu.scss";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
 
@@ -8,6 +9,16 @@
   box-sizing: border-box;
   transition: .5s;
   margin: 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: .5s;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .display-none {
@@ -26,33 +37,6 @@ body {
 .header {
   width: 100%;
   height: $logo-height;
-
-  .desktop-menu {
-    position: sticky;
-    &__list {
-      width: 100%;
-      min-width: 300px;
-      list-style: none;
-      padding-left: 0px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      &-item {
-        height: 44px;
-        line-height: 44px;
-        background-color: $nav-bg-color;
-        color: $nav-text-color;
-        text-align: center;
-        text-transform: uppercase;
-        cursor: pointer;
-        &:hover {
-          background-color: $nav-bg-color-hover;
-          color: $nav-text-color-hover;
-          opacity: .8;
-        }
-      }
-    }
-  }
 }
 
 .hero {
