@@ -158,6 +158,10 @@
   color: #015249;
 }
 
+.menu.mobile-hidden {
+  bottom: -240px;
+}
+
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
