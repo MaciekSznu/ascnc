@@ -26,7 +26,7 @@ body {
 .header {
   width: 100%;
   height: $logo-height;
-  
+
   .desktop-menu {
     position: sticky;
     &__list {
@@ -143,6 +143,51 @@ body {
           font: $foto-description-font;
           text-align: center;
         }
+      }
+    }
+  }
+}
+
+.customers {
+  @extend .products;
+
+  flex-direction: column;
+
+
+  .customers-wrapper {
+    @include flex-evenly-center;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .customers-item {
+      display: flex;
+
+      &-logo {
+        width: $customers-item-logo-width;
+        max-width: 140px;
+        height: $customers-item-logo-width;
+        max-height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-img {
+          width: 100%;
+          filter: grayscale(100%) blur(1px);
+          opacity: .6;
+
+          &:hover {
+            filter: none;
+            opacity: .9;
+          }
+        }
+
+        // &-description {
+        //   font: $foto-description-font;
+        //   text-align: center;
+        // }
       }
     }
   }

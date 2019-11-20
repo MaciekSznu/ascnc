@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap");
 .logo {
-  font: 700 26px "Montserrat", sans-serif;
+  font: 600 26px "Montserrat", sans-serif;
   position: fixed;
   top: 0;
   height: 60px;
@@ -36,7 +36,7 @@
 
 .logo__item p {
   color: #fff;
-  font: 700 26px "Montserrat", sans-serif;
+  font: 600 26px "Montserrat", sans-serif;
   margin: 0 0 5px 0;
 }
 
@@ -163,7 +163,7 @@ body {
   font: 500 1.6rem "Montserrat", sans-serif;
 }
 
-.about-us, .products, .team {
+.about-us, .products, .team, .customers {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
@@ -180,29 +180,29 @@ body {
   background-color: #57bc90;
 }
 
-.about-us .section-title, .products .section-title, .team .section-title {
+.about-us .section-title, .products .section-title, .team .section-title, .customers .section-title {
   text-align: center;
   font: 600 1.8rem "Montserrat", sans-serif;
   padding: 1rem 0;
 }
 
-.about-us .section-paragraph, .products .section-paragraph, .team .section-paragraph {
+.about-us .section-paragraph, .products .section-paragraph, .team .section-paragraph, .customers .section-paragraph {
   text-align: left;
   font: 400 1rem "Montserrat", sans-serif;
   padding: 1rem 0;
 }
 
-.products, .team {
+.products, .team, .customers {
   background-color: whitesmoke;
 }
 
-.products .section-list, .team .section-list {
+.products .section-list, .team .section-list, .customers .section-list {
   text-align: left;
   font: 400 1rem "Montserrat", sans-serif;
   padding: 1rem;
 }
 
-.products .section-list--item, .team .section-list--item {
+.products .section-list--item, .team .section-list--item, .customers .section-list--item {
   margin-bottom: .5rem;
 }
 
@@ -257,5 +257,66 @@ body {
 .team .team-wrapper .team-member .foto-description {
   font: 400 1rem "Montserrat", sans-serif;
   text-align: center;
+}
+
+.customers {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.customers .customers-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.customers .customers-wrapper .customers-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.customers .customers-wrapper .customers-item-logo {
+  width: calc((100vw - 32px) * .4);
+  max-width: 140px;
+  height: calc((100vw - 32px) * .4);
+  max-height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customers .customers-wrapper .customers-item-logo-img {
+  width: 100%;
+  -webkit-filter: grayscale(100%) blur(1px);
+          filter: grayscale(100%) blur(1px);
+  opacity: .6;
+}
+
+.customers .customers-wrapper .customers-item-logo-img:hover {
+  -webkit-filter: none;
+          filter: none;
+  opacity: .9;
 }
 /*# sourceMappingURL=style.css.map */
