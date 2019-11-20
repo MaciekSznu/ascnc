@@ -1,0 +1,48 @@
+.logo {
+  font: $logo-font;
+  position: fixed;
+  top: 0;
+  height: $logo-height;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $logo-bg-color;
+  z-index: 100;
+
+  &__item {
+    height: $logo-item-height;
+    width: $logo-item-height;
+    border-radius: 50%;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      color: $tile-text-color;
+      font: $logo-font;
+      margin: 0 0 5px 0;
+    }
+
+    &--1 {
+      background-color: $logo-item-color-1;
+    }
+
+    &--2 {
+      background-color: $logo-item-color-2;
+    }
+
+    &--3 {
+      background-color: $logo-item-color-3;
+    }
+
+    &--4 {
+      background-color: $logo-item-color-4;
+    }
+
+    &--5 {
+      background-color: $logo-item-color-5;
+    }
+  }
+}

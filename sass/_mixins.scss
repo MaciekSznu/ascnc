@@ -1,13 +1,17 @@
 @mixin mobile-boxing {
   margin: 0 auto;
-  width: calc(100vw - 16px);
+  width: 100%;
   max-width: 1200px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 @mixin flex-center-center {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-evenly-center {
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
 }

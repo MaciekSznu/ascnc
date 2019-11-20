@@ -1,7 +1,75 @@
-$body-bg-color: #ffffff;
 $nav-bg-color: #ffffff;
 $nav-bg-color-hover: #77c9d4;
 $nav-text-color: #015249;
 $nav-text-color-hover: #ffffff;
 $hero-bg-color: #57bc90;
 $hero-text-color: #a5a5af;
+
+$media-tablet-size: 768px;
+$max-media-mobile-size: 767px;
+$media-desktop-size: 1280px;
+$body-max-width: 1280px;
+
+$body-bg-color: #fff;
+$logo-bg-color: rgba(251,250,251,.9);
+$mobile-menu-bg-color: rgba(251,250,251,.9);
+$tile-color-primary: blue;
+$tile-color-secondary: lightblue;
+$tile-color-third: violet;
+$tile-color-fourth: orange;
+$tile-text-color: #fff;
+
+$tile-width: 150px;
+$tile-height: 150px;
+
+$logo-height: 60px;
+$logo-item-height: 40px;
+$logo-item-color-1: #7bd5f5;
+$logo-item-color-2: #787ff6;
+$logo-item-color-3: #1f2f98;
+$logo-item-color-4: #1ca7ec;
+$logo-item-color-5: #4adede;
+$gradient-secondary-color: rgba(229,232,229,1);
+$o-nas-background-gradient: linear-gradient(135deg, rgba($logo-item-color-3,1) 0%, $gradient-secondary-color 100%);
+$uslugi-background-gradient: linear-gradient(135deg, rgba($logo-item-color-5,1) 0%, $gradient-secondary-color 100%);
+$zespol-background-gradient: linear-gradient(135deg, rgba($logo-item-color-4,1) 0%, $gradient-secondary-color 100%);
+$kontakt-background-gradient: linear-gradient(135deg, rgba($logo-item-color-1,1) 0%, $gradient-secondary-color 100%);
+$klienci-background-gradient: linear-gradient(135deg, rgba($logo-item-color-2,1) 0%, $gradient-secondary-color 100%);
+// $kontakt-background-gradient: linear-gradient(135deg, $gradient-secondary-color 0%, rgba($logo-item-color-1,1) 100%);
+
+
+$base-h2-font-size: 2rem;
+$base-p-font-size: 1rem;
+
+$hero-title-font: 800 2.2rem 'Montserrat', sans-serif;
+$hero-paragraph-font: 500 1.6rem 'Montserrat', sans-serif;
+$section-title-font: 600 1.8rem 'Montserrat', sans-serif;
+$section-paragraph-font: 400 1rem 'Montserrat', sans-serif;
+$foto-description-font: 400 1rem 'Montserrat', sans-serif;
+
+
+$team-member-mobile-width: calc((100vw - 32px) * .8);
+
+$content-box-header-font: 700 2rem 'Montserrat', sans-serif;
+$logo-font: 700 26px 'Montserrat', sans-serif;
+$mobile-menu-font: 700 10px 'Thasadith', sans-serif;
+$content-box-paragraph-font: 300 1rem 'Barlow Condensed', sans-serif;
+$team-description-font: 500 1.25rem 'Barlow Condensed', sans-serif;
+$desktop-menu-font: 700 22px 'Thasadith', sans-serif;
+$mobile-kotakt-font: 500 1rem 'Thasadith', sans-serif;
+
+$mobile-menu-width: 100vw;
+$mobile-menu-height: 50px;
+$content-box-width: 100vw;
+$tablet-menu-min-width: 180px;
+$desktop-menu-min-width: 220px;
+$tablet-content-box-width: calc(100vw - #{$tablet-menu-min-width} - 15vw);
+$desktop-content-box-width: calc(1280px - #{$desktop-menu-min-width} - 300px);
+$tablet-content-box-height: calc(100vh - #{$logo-height} - 20vh);
+$desktop-content-box-height: calc(100vh - #{$logo-height} -20vh);
+$tablet-mini-box-height: calc(.29 * #{$tablet-content-box-height});
+$tablet-mini-box-width-portrait: calc(.29 * #{$tablet-content-box-width});
+
+$content-box-shadow-color: rgba(162,141,186,1);
+
+
