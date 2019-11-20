@@ -3,87 +3,87 @@
   bottom: 0;
   z-index: 10;
 
-    &__list {
-      width: 100vw;
-      list-style: none;
-      padding-left: 0px;
+  &__list {
+    width: 100vw;
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: .95;
+    font: $mobile-menu-font;
+
+    &-item {
       display: flex;
       justify-content: center;
-      flex-direction: column;
-      opacity: .95;
-      font: $mobile-menu-font;
+      align-items: center;
+      height: 40px;
+      line-height: 40px;
+      background-color: $nav-bg-color;
+      color: $nav-text-color;
+      text-transform: uppercase;
+      cursor: pointer;
 
-      // &:first-child {
-      //   border-top: 1px solid $nav-bg-color-hover;
-      // }
+      &:not(:first-child) {
+        border-top: 1px solid $nav-bg-color-hover;
+      }
 
-      &-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 40px;
-        line-height: 40px;
-        background-color: $nav-bg-color;
-        color: $nav-text-color;
-        text-transform: uppercase;
-        border-bottom: 1px solid $nav-bg-color-hover;
-        cursor: pointer;
-        &:hover {
-          background-color: $nav-bg-color-hover;
-          color: $nav-text-color-hover;
+      &:hover {
 
-          .hamburger-menu {
-            background-color: $nav-bg-color-hover;
+        &:not(:first-child) {
+        background-color: $nav-bg-color-hover;
+        color: $nav-text-color-hover;
+        }
+      }
+
+      .hamburger-menu {
+        width: 20px;
+        height: 30px;
+        background: $nav-bg-color;
+        border: none;
+        padding: 0;
+        outline: $nav-bg-color;
+
+        // &:hover {
+        //   background-color: $nav-bg-color-hover;
+        //   color: $nav-text-color-hover;
+        // }
+
+        &-line {
+          position: relative;
+          display: block;
+          height: 2px;
+          width: 100%;
+          background: $nav-text-color;
+
+          &:before {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 100%;
+            left: 0;
+            top: 7px;
+            background: $nav-text-color;
+          }
+
+          &:after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 100%;
+            left: 0;
+            bottom: 7px;
+            background: $nav-text-color;
           }
         }
 
-        .hamburger-menu {
-          width: 20px;
-          height: 30px;
-          background: $nav-bg-color;
-          border: none;
-          padding: 0;
-          outline: $nav-bg-color;
-          &:hover {
-            background-color: $nav-bg-color-hover;
-            color: $nav-text-color-hover;
-          }
-
-          &-line {
-            position: relative;
-            display: block;
-            height: 2px;
-            width: 100%;
-            background: $nav-text-color;
-
-            &:before {
-              position: absolute;
-              content: '';
-              height: 2px;
-              width: 100%;
-              left: 0;
-              top: 7px;
-              background: $nav-text-color;
-            }
-
-            &:after {
-              position: absolute;
-              content: '';
-              height: 2px;
-              width: 100%;
-              left: 0;
-              bottom: 7px;
-              background: $nav-text-color;
-            }
-          }
-
-          &:focus {
-            color: $nav-text-color;
-          }
+        &:focus {
+          color: $nav-text-color;
         }
       }
     }
   }
+}
 
 .menu.mobile-hidden {
   bottom: -240px;

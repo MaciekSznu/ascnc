@@ -99,17 +99,16 @@
   background-color: #ffffff;
   color: #015249;
   text-transform: uppercase;
-  border-bottom: 1px solid #77c9d4;
   cursor: pointer;
 }
 
-.menu__list-item:hover {
-  background-color: #77c9d4;
-  color: #ffffff;
+.menu__list-item:not(:first-child) {
+  border-top: 1px solid #77c9d4;
 }
 
-.menu__list-item:hover .hamburger-menu {
+.menu__list-item:hover:not(:first-child) {
   background-color: #77c9d4;
+  color: #ffffff;
 }
 
 .menu__list-item .hamburger-menu {
@@ -119,11 +118,6 @@
   border: none;
   padding: 0;
   outline: #ffffff;
-}
-
-.menu__list-item .hamburger-menu:hover {
-  background-color: #77c9d4;
-  color: #ffffff;
 }
 
 .menu__list-item .hamburger-menu-line {
