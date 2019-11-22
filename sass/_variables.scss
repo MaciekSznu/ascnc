@@ -29,13 +29,7 @@ $logo-item-color-2: #787ff6;
 $logo-item-color-3: #1f2f98;
 $logo-item-color-4: #1ca7ec;
 $logo-item-color-5: #4adede;
-$gradient-secondary-color: rgba(229,232,229,1);
-$o-nas-background-gradient: linear-gradient(135deg, rgba($logo-item-color-3,1) 0%, $gradient-secondary-color 100%);
-$uslugi-background-gradient: linear-gradient(135deg, rgba($logo-item-color-5,1) 0%, $gradient-secondary-color 100%);
-$zespol-background-gradient: linear-gradient(135deg, rgba($logo-item-color-4,1) 0%, $gradient-secondary-color 100%);
-$kontakt-background-gradient: linear-gradient(135deg, rgba($logo-item-color-1,1) 0%, $gradient-secondary-color 100%);
-$klienci-background-gradient: linear-gradient(135deg, rgba($logo-item-color-2,1) 0%, $gradient-secondary-color 100%);
-// $kontakt-background-gradient: linear-gradient(135deg, $gradient-secondary-color 0%, rgba($logo-item-color-1,1) 100%);
+
 
 
 $base-h2-font-size: 2rem;
@@ -47,11 +41,14 @@ $section-title-font: 600 1.8rem 'Montserrat', sans-serif;
 $section-paragraph-font: 400 1rem 'Montserrat', sans-serif;
 $foto-description-font: 400 1rem 'Montserrat', sans-serif;
 $mobile-menu-font: 500 .8rem 'Montserrat', sans-serif;
+$mobile-contact-font: 400 .8rem 'Montserrat', sans-serif;
+$portfolio-desription-font: 500 1.2rem 'Montserrat', sans-serif;
 
 
 
 $team-member-mobile-width: calc((100vw - 32px) * .8);
 $customers-item-logo-width: calc((100vw - 32px) * .4);
+$portfolio-item-mobile-width: calc((100vw - 32px) * .9);
 
 $content-box-header-font: 700 2rem 'Montserrat', sans-serif;
 $logo-font: 600 26px 'Montserrat', sans-serif;
@@ -59,7 +56,7 @@ $logo-font: 600 26px 'Montserrat', sans-serif;
 $content-box-paragraph-font: 300 1rem 'Barlow Condensed', sans-serif;
 $team-description-font: 500 1.25rem 'Barlow Condensed', sans-serif;
 $desktop-menu-font: 700 22px 'Thasadith', sans-serif;
-$mobile-kotakt-font: 500 1rem 'Thasadith', sans-serif;
+
 
 $mobile-menu-width: 100vw;
 $mobile-menu-height: 50px;

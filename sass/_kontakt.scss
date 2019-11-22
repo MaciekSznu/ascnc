@@ -1,0 +1,50 @@
+.contact {
+  @include mobile-boxing;
+  @include flex-center-center;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: $hero-bg-color;
+  margin-bottom: $mobile-menu-height;
+
+  .section-title {
+    text-align: center;
+    font: $section-title-font;
+    padding: 1rem 0;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+    .contact-properties {
+      text-align: right;
+      width: 25%;
+
+      p:first-of-type {
+        height: 30px;
+      }
+    }
+
+    .contact-values {
+      text-align: left;
+      width: 65%;
+    }
+
+    .contact-paragraph {
+      margin-bottom: 5px;
+      font: $mobile-contact-font;
+
+      a {
+        text-decoration: none;
+        font: inherit;
+      }
+    }
+  }
+  .section-paragraph {
+    text-align: left;
+    font: $section-paragraph-font;
+    padding: 1rem 0;
+  }
+}
