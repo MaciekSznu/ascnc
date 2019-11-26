@@ -192,6 +192,14 @@ body {
 
   background-color: lightcyan;
   flex-direction: column;
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  .potfolio-wrapper {
+    margin: 0;
+    padding: 0;
+  }
 
   .portfolio-items-wrapper {
     flex-direction: row;
@@ -207,14 +215,16 @@ body {
       align-items: center;
 
       .foto {
-        //position: relative;
+        position: relative;
         width: $portfolio-item-mobile-width;
         max-width: 414px;
         height: $portfolio-item-mobile-height;
-        max-height: 270px;
+        max-height: 300px;
 
         .portfolio-foto {
           width: 100%;
+          height: inherit;
+          max-height: inherit;
         }
 
         &-description-wrapper {
@@ -222,12 +232,13 @@ body {
           opacity: 0;
           position: absolute;
           width: 100%;
-          height: 100%;
+          height: $portfolio-item-mobile-height;
+          max-height: 300px;
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
           align-items: flex-start;
-          padding: 1rem;
+          padding: 0 1rem 1rem;
 
           .foto-description {
             font: $portfolio-desription-font;

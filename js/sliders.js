@@ -7,6 +7,8 @@ const teamSlider = new Siema({
 
 const portfolioSlider = new Siema({
   selector: '.portfolio-items-wrapper',
+  loop: true,
+
   // loop: true,
   // onInit: () => {
   //   const slider = document.querySelector('.portfolio-items-wrapper');
