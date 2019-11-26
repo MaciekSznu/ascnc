@@ -4,11 +4,13 @@
 @import "_mobile-menu.scss";
 @import "_kontakt.scss";
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap");
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
-  transition: .5s;
+  transition: 0.5s;
   margin: 0;
 }
 
@@ -20,7 +22,7 @@ a {
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 html {
@@ -34,7 +36,7 @@ html {
 body {
   width: 100vw;
   background-color: $body-bg-color;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,13 +54,14 @@ body {
   max-height: 675px;
   background: url(../images/hero_01_w_768.jpg);
 
-  .hero-title, .hero-paragraph {
+  .hero-title,
+  .hero-paragraph {
     text-align: center;
     color: white;
     margin: 16px 0;
   }
 
-  .hero-title{
+  .hero-title {
     font: $hero-title-font;
   }
 
@@ -97,37 +100,44 @@ body {
     padding: 1rem;
 
     &--item {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
   }
 }
 
 .team {
-  @extend .products;
+  @extend .about-us;
 
   background-color: lightcyan;
   flex-direction: column;
 
   .team-wrapper {
-    @include flex-evenly-center;
-
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
 
     .team-member {
+      width: 100%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 2rem;
 
       .foto {
+        @include flex-center-center;
         width: $team-member-mobile-width;
-        max-width: 240px;
+        max-width: 320px;
         height: $team-member-mobile-width;
-        max-height: 240px;
+        max-height: 320px;
         border-radius: 50%;
-        background: url('../images/foto1.jpg') center;
         margin-bottom: 1rem;
+        overflow: hidden;
+
+        .team-member-foto {
+          height: 100%;
+        }
 
         &-description {
           font: $foto-description-font;
@@ -165,11 +175,11 @@ body {
         &-img {
           width: 100%;
           filter: grayscale(100%);
-          opacity: .6;
+          opacity: 0.6;
 
           &:hover {
             filter: none;
-            opacity: .9;
+            opacity: 0.9;
           }
         }
       }
@@ -178,44 +188,50 @@ body {
 }
 
 .portfolio {
-  @extend .team;
+  @extend .about-us;
 
   background-color: lightcyan;
   flex-direction: column;
 
-  .team-wrapper {
-    @include flex-evenly-center;
-
+  .portfolio-items-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
 
-    .team-member {
+    .portfolio-item {
+      width: 100%;
       display: flex;
       flex-direction: column;
-      margin-bottom: 2rem;
+      justify-content: center;
+      align-items: center;
 
       .foto {
-        position: relative;
+        //position: relative;
         width: $portfolio-item-mobile-width;
-        max-width: 270px;
-        height: $portfolio-item-mobile-width;
+        max-width: 414px;
+        height: $portfolio-item-mobile-height;
         max-height: 270px;
-        border-radius: 0;
-        background: url('../images/foto1.jpg') center;
-        margin-bottom: 1rem;
+
+        .portfolio-foto {
+          width: 100%;
+        }
 
         &-description-wrapper {
+          top: 0;
           opacity: 0;
           position: absolute;
           width: 100%;
           height: 100%;
-          @include flex-center-center;
+          display: flex;
           flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-start;
+          padding: 1rem;
 
           .foto-description {
             font: $portfolio-desription-font;
-            text-align: center;
+            text-align: left;
             color: white;
           }
         }

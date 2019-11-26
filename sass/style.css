@@ -227,11 +227,13 @@
   padding: 1rem 0;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   margin: 0;
 }
 
@@ -243,8 +245,8 @@ a {
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 html {
@@ -258,7 +260,7 @@ html {
 body {
   width: 100vw;
   background-color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,7 +296,8 @@ body {
   background: url(../images/hero_01_w_768.jpg);
 }
 
-.hero .hero-title, .hero .hero-paragraph {
+.hero .hero-title,
+.hero .hero-paragraph {
   text-align: center;
   color: white;
   margin: 16px 0;
@@ -308,7 +311,7 @@ body {
   font: 500 1.6rem "Montserrat", sans-serif;
 }
 
-.about-us, .products, .team, .portfolio, .customers {
+.about-us, .products, .customers, .team, .portfolio {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
@@ -325,33 +328,33 @@ body {
   background-color: #57bc90;
 }
 
-.about-us .section-title, .products .section-title, .team .section-title, .portfolio .section-title, .customers .section-title {
+.about-us .section-title, .products .section-title, .customers .section-title, .team .section-title, .portfolio .section-title {
   text-align: center;
   font: 600 1.8rem "Montserrat", sans-serif;
   padding: 1rem 0;
 }
 
-.about-us .section-paragraph, .products .section-paragraph, .team .section-paragraph, .portfolio .section-paragraph, .customers .section-paragraph {
+.about-us .section-paragraph, .products .section-paragraph, .customers .section-paragraph, .team .section-paragraph, .portfolio .section-paragraph {
   text-align: left;
   font: 400 1rem "Montserrat", sans-serif;
   padding: 1rem 0;
 }
 
-.products, .team, .portfolio, .customers {
+.products, .customers {
   background-color: whitesmoke;
 }
 
-.products .section-list, .team .section-list, .portfolio .section-list, .customers .section-list {
+.products .section-list, .customers .section-list {
   text-align: left;
   font: 400 1rem "Montserrat", sans-serif;
   padding: 1rem;
 }
 
-.products .section-list--item, .team .section-list--item, .portfolio .section-list--item, .customers .section-list--item {
-  margin-bottom: .5rem;
+.products .section-list--item, .customers .section-list--item {
+  margin-bottom: 0.5rem;
 }
 
-.team, .portfolio {
+.team {
   background-color: lightcyan;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -359,26 +362,21 @@ body {
           flex-direction: column;
 }
 
-.team .team-wrapper, .portfolio .team-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.team .team-wrapper {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
-.team .team-wrapper .team-member, .portfolio .team-wrapper .team-member {
+.team .team-wrapper .team-member {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,20 +384,39 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 2rem;
 }
 
-.team .team-wrapper .team-member .foto, .portfolio .team-wrapper .team-member .foto {
-  width: calc((100vw - 32px) * .8);
-  max-width: 240px;
-  height: calc((100vw - 32px) * .8);
-  max-height: 240px;
+.team .team-wrapper .team-member .foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc((100vw - 32px) * 0.9);
+  max-width: 320px;
+  height: calc((100vw - 32px) * 0.9);
+  max-height: 320px;
   border-radius: 50%;
-  background: url("../images/foto1.jpg") center;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 
-.team .team-wrapper .team-member .foto-description, .portfolio .team-wrapper .team-member .foto-description {
+.team .team-wrapper .team-member .foto .team-member-foto {
+  height: 100%;
+}
+
+.team .team-wrapper .team-member .foto-description {
   font: 400 1rem "Montserrat", sans-serif;
   text-align: center;
 }
@@ -437,9 +454,9 @@ body {
 }
 
 .customers .customers-wrapper .customers-item-logo {
-  width: calc((100vw - 32px) * .4);
+  width: calc((100vw - 32px) * 0.4);
   max-width: 140px;
-  height: calc((100vw - 32px) * .4);
+  height: calc((100vw - 32px) * 0.4);
   max-height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,13 +473,13 @@ body {
   width: 100%;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .customers .customers-wrapper .customers-item-logo-img:hover {
   -webkit-filter: none;
           filter: none;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .portfolio {
@@ -473,26 +490,21 @@ body {
           flex-direction: column;
 }
 
-.portfolio .team-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.portfolio .portfolio-items-wrapper {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
-.portfolio .team-wrapper .team-member {
+.portfolio .portfolio-items-wrapper .portfolio-item {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,21 +512,27 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.portfolio .team-wrapper .team-member .foto {
-  position: relative;
-  width: calc((100vw - 32px) * .9);
-  max-width: 270px;
-  height: calc((100vw - 32px) * .9);
+.portfolio .portfolio-items-wrapper .portfolio-item .foto {
+  width: 100vw;
+  max-width: 414px;
+  height: calc(100vw / 4 * 3);
   max-height: 270px;
-  border-radius: 0;
-  background: url("../images/foto1.jpg") center;
-  margin-bottom: 1rem;
 }
 
-.portfolio .team-wrapper .team-member .foto-description-wrapper {
+.portfolio .portfolio-items-wrapper .portfolio-item .foto .portfolio-foto {
+  width: 100%;
+}
+
+.portfolio .portfolio-items-wrapper .portfolio-item .foto-description-wrapper {
+  top: 0;
   opacity: 0;
   position: absolute;
   width: 100%;
@@ -522,30 +540,31 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1rem;
 }
 
-.portfolio .team-wrapper .team-member .foto-description-wrapper .foto-description {
+.portfolio .portfolio-items-wrapper .portfolio-item .foto-description-wrapper .foto-description {
   font: 500 1.2rem "Montserrat", sans-serif;
-  text-align: center;
+  text-align: left;
   color: white;
 }
 
-.portfolio .team-wrapper .team-member .foto:hover {
+.portfolio .portfolio-items-wrapper .portfolio-item .foto:hover {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
 
-.portfolio .team-wrapper .team-member .foto:hover .foto-description-wrapper {
+.portfolio .portfolio-items-wrapper .portfolio-item .foto:hover .foto-description-wrapper {
   opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
