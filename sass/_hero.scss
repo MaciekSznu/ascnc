@@ -19,4 +19,12 @@
   .hero-paragraph {
     font: $hero-paragraph-font;
   }
+
+  @media (min-width: $media-tablet-size) {
+    max-height: 400px;
+
+    .hero-title {
+      font: $hero-title-tablet-font;
+    }
+  }
 }

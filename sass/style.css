@@ -189,6 +189,15 @@
   font: 500 1.6rem "Montserrat", sans-serif;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    max-height: 400px;
+  }
+  .hero .hero-title {
+    font: 800 3rem "Montserrat", sans-serif;
+  }
+}
+
 .about-us, .products, .customers, .team, .portfolio {
   margin: 0 auto;
   width: 100%;
@@ -218,6 +227,21 @@
   padding: 1rem 0;
 }
 
+@media (min-width: 768px) {
+  .about-us, .products, .customers, .team, .portfolio {
+    min-height: 400px;
+    padding: 2rem;
+  }
+  .about-us .section-title, .products .section-title, .customers .section-title, .team .section-title, .portfolio .section-title {
+    text-align: left;
+    font: 700 2.8rem "Montserrat", sans-serif;
+    padding: 0 0 1rem;
+  }
+  .about-us .section-paragraph, .products .section-paragraph, .customers .section-paragraph, .team .section-paragraph, .portfolio .section-paragraph {
+    font: 400 1.1rem "Montserrat", sans-serif;
+  }
+}
+
 .products, .customers {
   background-color: whitesmoke;
 }
@@ -230,6 +254,13 @@
 
 .products .section-list--item, .customers .section-list--item {
   margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .products .section-list, .customers .section-list {
+    font: 400 1.1rem "Montserrat", sans-serif;
+    line-height: 140%;
+  }
 }
 
 .team {

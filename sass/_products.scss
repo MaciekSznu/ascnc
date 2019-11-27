@@ -12,4 +12,11 @@
       margin-bottom: 0.5rem;
     }
   }
+
+  @media (min-width: $media-tablet-size) {
+    .section-list {
+      font: $section-paragraph-tablet-font;
+      line-height: 140%;
+    }
+  }
 }

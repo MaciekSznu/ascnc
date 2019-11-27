@@ -15,4 +15,19 @@
     font: $section-paragraph-font;
     padding: 1rem 0;
   }
+
+  @media (min-width: $media-tablet-size) {
+    min-height: 400px;
+    padding: 2rem;
+
+    .section-title {
+      text-align: left;
+      font: $section-title-tablet-font;
+      padding: 0 0 1rem;
+    }
+
+    .section-paragraph {
+      font: $section-paragraph-tablet-font;
+    }
+  }
 }
