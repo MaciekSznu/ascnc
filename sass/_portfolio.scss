@@ -68,4 +68,31 @@
       }
     }
   }
+
+  @media (min-width: $media-tablet-size) {
+    padding: 2rem 0 3rem;
+
+    .section-title {
+      text-align: left;
+      font: $section-title-tablet-font;
+      padding: 1rem 2rem 2rem;
+    }
+
+    .portfolio-items-wrapper {
+      .portfolio-item {
+        .foto {
+          width: $portfolio-item-tablet-width;
+          height: $portfolio-item-tablet-height;
+
+          &-description-wrapper {
+            height: $portfolio-item-tablet-height;
+
+            .foto-description {
+              font: $portfolio-desription-tablet-font;
+            }
+          }
+        }
+      }
+    }
+  }
 }

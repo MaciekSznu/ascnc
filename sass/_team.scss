@@ -41,6 +41,16 @@
   }
 
   @media (min-width: $media-tablet-size) {
+    padding: 2rem 1rem;
 
+    .team-wrapper {
+      .team-member {
+        .foto {
+          &-description {
+            font: $foto-description-tablet-font;
+          }
+        }
+      }
+    }
   }
 }

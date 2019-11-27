@@ -1,0 +1,89 @@
+.contact {
+  @include mobile-boxing;
+  @include flex-center-center;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: $hero-bg-color;
+  margin-bottom: $mobile-menu-height;
+
+  .section-title {
+    text-align: center;
+    font: $section-title-font;
+    padding: 1rem 0;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+    .contact-properties {
+      text-align: right;
+      width: 25%;
+
+      p:first-of-type {
+        height: 30px;
+      }
+    }
+
+    .contact-values {
+      text-align: left;
+      width: 65%;
+    }
+
+    .contact-paragraph {
+      margin-bottom: 5px;
+      font: $mobile-contact-font;
+
+      a {
+        text-decoration: none;
+        font: inherit;
+      }
+    }
+  }
+  // .section-paragraph {
+  //   text-align: left;
+  //   font: $section-paragraph-font;
+  //   padding: 1rem 0;
+  // }
+
+  @media (min-width: $media-tablet-size) {
+    min-height: 200px;
+    padding: 2rem;
+
+    .section-title {
+      width: 100%;
+      text-align: left;
+      font: $section-title-tablet-font;
+      padding: 1rem 1rem 2rem;
+    }
+
+    .contact-wrapper {
+      justify-content: space-around;
+      .contact-properties {
+        text-align: right;
+        width: 15%;
+
+        p:first-of-type {
+          height: 30px;
+        }
+      }
+
+      .contact-values {
+        text-align: left;
+        width: 75%;
+      }
+
+      .contact-paragraph {
+        margin-bottom: 5px;
+        font: $tablet-contact-font;
+
+        a {
+          text-decoration: none;
+          font: inherit;
+        }
+      }
+    }
+  }
+}

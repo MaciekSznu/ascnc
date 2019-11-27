@@ -330,6 +330,15 @@
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .team {
+    padding: 2rem 1rem;
+  }
+  .team .team-wrapper .team-member .foto-description {
+    font: 500 1.2rem "Montserrat", sans-serif;
+  }
+}
+
 .customers {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -489,6 +498,27 @@
   opacity: 1;
 }
 
+@media (min-width: 768px) {
+  .portfolio {
+    padding: 2rem 0 3rem;
+  }
+  .portfolio .section-title {
+    text-align: left;
+    font: 700 2.8rem "Montserrat", sans-serif;
+    padding: 1rem 2rem 2rem;
+  }
+  .portfolio .portfolio-items-wrapper .portfolio-item .foto {
+    width: 50vw;
+    height: calc(100vw / 4 * 3);
+  }
+  .portfolio .portfolio-items-wrapper .portfolio-item .foto-description-wrapper {
+    height: calc(100vw / 4 * 3);
+  }
+  .portfolio .portfolio-items-wrapper .portfolio-item .foto-description-wrapper .foto-description {
+    font: 500 1.5rem "Montserrat", sans-serif;
+  }
+}
+
 .contact {
   margin: 0 auto;
   width: 100%;
@@ -554,10 +584,40 @@
   font: inherit;
 }
 
-.contact .section-paragraph {
-  text-align: left;
-  font: 400 1rem "Montserrat", sans-serif;
-  padding: 1rem 0;
+@media (min-width: 768px) {
+  .contact {
+    min-height: 200px;
+    padding: 2rem;
+  }
+  .contact .section-title {
+    width: 100%;
+    text-align: left;
+    font: 700 2.8rem "Montserrat", sans-serif;
+    padding: 1rem 1rem 2rem;
+  }
+  .contact .contact-wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contact .contact-wrapper .contact-properties {
+    text-align: right;
+    width: 15%;
+  }
+  .contact .contact-wrapper .contact-properties p:first-of-type {
+    height: 30px;
+  }
+  .contact .contact-wrapper .contact-values {
+    text-align: left;
+    width: 75%;
+  }
+  .contact .contact-wrapper .contact-paragraph {
+    margin-bottom: 5px;
+    font: 500 1rem "Montserrat", sans-serif;
+  }
+  .contact .contact-wrapper .contact-paragraph a {
+    text-decoration: none;
+    font: inherit;
+  }
 }
 
 *,
