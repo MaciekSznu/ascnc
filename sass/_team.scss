@@ -1,0 +1,42 @@
+.team {
+  @extend .about-us;
+
+  background-color: lightcyan;
+  flex-direction: column;
+
+  .team-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+    .team-member {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      .foto {
+        @include flex-center-center;
+        width: $team-member-mobile-width;
+        max-width: 320px;
+        height: $team-member-mobile-width;
+        max-height: 320px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        overflow: hidden;
+
+        .team-member-foto {
+          height: 100%;
+        }
+
+        &-description {
+          font: $foto-description-font;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

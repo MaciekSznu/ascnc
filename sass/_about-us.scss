@@ -1,0 +1,18 @@
+.about-us {
+  @include mobile-boxing;
+  @include flex-center-center;
+  padding: 1rem;
+  background-color: $hero-bg-color;
+
+  .section-title {
+    text-align: center;
+    font: $section-title-font;
+    padding: 1rem 0;
+  }
+
+  .section-paragraph {
+    text-align: left;
+    font: $section-paragraph-font;
+    padding: 1rem 0;
+  }
+}

@@ -2,6 +2,12 @@
 @import "_mixins.scss";
 @import "_logo.scss";
 @import "_mobile-menu.scss";
+@import "_hero.scss";
+@import "_about-us.scss";
+@import "_products.scss";
+@import "_team.scss";
+@import "_customers.scss";
+@import "_portfolio.scss";
 @import "_kontakt.scss";
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap");
@@ -47,214 +53,12 @@ body {
   height: $logo-height;
 }
 
-.hero {
-  @include mobile-boxing;
-  @include flex-center-center;
-  height: 80vw;
-  max-height: 675px;
-  background: url(../images/hero_01_w_768.jpg);
 
-  .hero-title,
-  .hero-paragraph {
-    text-align: center;
-    color: white;
-    margin: 16px 0;
-  }
 
-  .hero-title {
-    font: $hero-title-font;
-  }
 
-  .hero-paragraph {
-    font: $hero-paragraph-font;
-  }
-}
 
-.about-us {
-  @include mobile-boxing;
-  @include flex-center-center;
-  padding: 1rem;
-  background-color: $hero-bg-color;
 
-  .section-title {
-    text-align: center;
-    font: $section-title-font;
-    padding: 1rem 0;
-  }
 
-  .section-paragraph {
-    text-align: left;
-    font: $section-paragraph-font;
-    padding: 1rem 0;
-  }
-}
 
-.products {
-  @extend .about-us;
 
-  background-color: whitesmoke;
 
-  .section-list {
-    text-align: left;
-    font: $section-paragraph-font;
-    padding: 1rem;
-
-    &--item {
-      margin-bottom: 0.5rem;
-    }
-  }
-}
-
-.team {
-  @extend .about-us;
-
-  background-color: lightcyan;
-  flex-direction: column;
-
-  .team-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-
-    .team-member {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 2rem;
-
-      .foto {
-        @include flex-center-center;
-        width: $team-member-mobile-width;
-        max-width: 320px;
-        height: $team-member-mobile-width;
-        max-height: 320px;
-        border-radius: 50%;
-        margin-bottom: 1rem;
-        overflow: hidden;
-
-        .team-member-foto {
-          height: 100%;
-        }
-
-        &-description {
-          font: $foto-description-font;
-          text-align: center;
-        }
-      }
-    }
-  }
-}
-
-.customers {
-  @extend .products;
-
-  flex-direction: column;
-
-  .customers-wrapper {
-    @include flex-evenly-center;
-
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-
-    .customers-item {
-      display: flex;
-
-      &-logo {
-        width: $customers-item-logo-width;
-        max-width: 140px;
-        height: $customers-item-logo-width;
-        max-height: 140px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &-img {
-          width: 100%;
-          filter: grayscale(100%);
-          opacity: 0.6;
-
-          &:hover {
-            filter: none;
-            opacity: 0.9;
-          }
-        }
-      }
-    }
-  }
-}
-
-.portfolio {
-  @extend .about-us;
-
-  background-color: lightcyan;
-  flex-direction: column;
-  display: block;
-  padding: 0;
-  margin: 0;
-
-  .potfolio-wrapper {
-    margin: 0;
-    padding: 0;
-  }
-
-  .portfolio-items-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-
-    .portfolio-item {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .foto {
-        position: relative;
-        width: $portfolio-item-mobile-width;
-        max-width: 414px;
-        height: $portfolio-item-mobile-height;
-        max-height: 300px;
-
-        .portfolio-foto {
-          width: 100%;
-          height: inherit;
-          max-height: inherit;
-        }
-
-        &-description-wrapper {
-          top: 0;
-          opacity: 0;
-          position: absolute;
-          width: 100%;
-          height: $portfolio-item-mobile-height;
-          max-height: 300px;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          align-items: flex-start;
-          padding: 0 1rem 1rem;
-
-          .foto-description {
-            font: $portfolio-desription-font;
-            text-align: left;
-            color: white;
-          }
-        }
-
-        &:hover {
-          filter: grayscale(100%);
-
-          .foto-description-wrapper {
-            opacity: 1;
-          }
-        }
-      }
-    }
-  }
-}

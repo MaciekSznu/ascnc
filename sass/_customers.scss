@@ -1,0 +1,38 @@
+.customers {
+  @extend .products;
+
+  flex-direction: column;
+
+  .customers-wrapper {
+    @include flex-evenly-center;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .customers-item {
+      display: flex;
+
+      &-logo {
+        width: $customers-item-logo-width;
+        max-width: 140px;
+        height: $customers-item-logo-width;
+        max-height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-img {
+          width: 100%;
+          filter: grayscale(100%);
+          opacity: 0.6;
+
+          &:hover {
+            filter: none;
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.hero {
+  @include mobile-boxing;
+  @include flex-center-center;
+  height: 80vw;
+  max-height: 675px;
+  background: url(../images/hero_01_w_768.jpg);
+
+  .hero-title,
+  .hero-paragraph {
+    text-align: center;
+    color: white;
+    margin: 16px 0;
+  }
+
+  .hero-title {
+    font: $hero-title-font;
+  }
+
+  .hero-paragraph {
+    font: $hero-paragraph-font;
+  }
+}

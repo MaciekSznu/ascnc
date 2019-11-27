@@ -1,0 +1,15 @@
+.products {
+  @extend .about-us;
+
+  background-color: whitesmoke;
+
+  .section-list {
+    text-align: left;
+    font: $section-paragraph-font;
+    padding: 1rem;
+
+    &--item {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
