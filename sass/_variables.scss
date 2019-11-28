@@ -8,7 +8,6 @@ $hero-text-color: #a5a5af;
 $media-tablet-size: 768px;
 $max-media-mobile-size: 767px;
 $media-desktop-size: 1200px;
-// $body-max-width: 1280px;
 
 $body-bg-color: rgb(246, 245, 245);
 $contact-bg-color: rgb(109, 109, 109);
@@ -41,7 +40,12 @@ $base-p-font-size: 1rem;
 
 $hero-title-font: 800 2.2rem "Montserrat", sans-serif;
 $hero-title-tablet-font: 800 3rem "Montserrat", sans-serif;
-$hero-paragraph-font: 500 1.6rem "Montserrat", sans-serif;
+$hero-title-desktop-font: 800 3.5rem "Montserrat", sans-serif;
+
+$hero-paragraph-font: 500 1.4rem "Montserrat", sans-serif;
+$hero-paragraph-tablet-font: 500 1.6rem "Montserrat", sans-serif;
+$hero-paragraph-desktop-font: 500 1.8rem "Montserrat", sans-serif;
+
 $section-title-font: 600 1.8rem "Montserrat", sans-serif;
 $section-title-tablet-font: 700 2.8rem "Montserrat", sans-serif;
 $section-paragraph-font: 400 1rem "Montserrat", sans-serif;

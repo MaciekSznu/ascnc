@@ -32,4 +32,29 @@
       font: $section-paragraph-tablet-font;
     }
   }
+
+  @media (min-width: $media-desktop-size) {
+    padding: 3rem 0 2rem;
+
+    .about-us-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      .text-wrapper {
+        flex: 2;
+      }
+
+      .fotos-wrapper {
+        flex: 1;
+
+        .about-us-foto {
+          height: 100%;
+          background: url(../images/pipes_03_600_400.jpg);
+          background-size: cover;
+          opacity: .8;
+        }
+      }
+    }
+  }
 }

@@ -3,7 +3,7 @@
   @include flex-center-center;
   height: 80vw;
   max-height: 675px;
-  background: url(../images/hero_01_w_768.jpg);
+  background: url(../images/helmets_hero_1280_842.jpg);
 
   .hero-title,
   .hero-paragraph {
@@ -25,6 +25,22 @@
 
     .hero-title {
       font: $hero-title-tablet-font;
+    }
+
+    .hero-paragraph {
+      font: $hero-paragraph-tablet-font;
+    }
+  }
+
+  @media (min-width: $media-desktop-size) {
+    max-height: 500px;
+
+    .hero-title {
+      font: $hero-title-desktop-font;
+    }
+
+    .hero-paragraph {
+      font: $hero-paragraph-desktop-font;
     }
   }
 }

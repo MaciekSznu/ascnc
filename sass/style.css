@@ -171,7 +171,7 @@
           align-items: center;
   height: 80vw;
   max-height: 675px;
-  background: url(../images/hero_01_w_768.jpg);
+  background: url(../images/helmets_hero_1280_842.jpg);
 }
 
 .hero .hero-title,
@@ -186,7 +186,7 @@
 }
 
 .hero .hero-paragraph {
-  font: 500 1.6rem "Montserrat", sans-serif;
+  font: 500 1.4rem "Montserrat", sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -195,6 +195,21 @@
   }
   .hero .hero-title {
     font: 800 3rem "Montserrat", sans-serif;
+  }
+  .hero .hero-paragraph {
+    font: 500 1.6rem "Montserrat", sans-serif;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    max-height: 500px;
+  }
+  .hero .hero-title {
+    font: 800 3.5rem "Montserrat", sans-serif;
+  }
+  .hero .hero-paragraph {
+    font: 500 1.8rem "Montserrat", sans-serif;
   }
 }
 
@@ -241,6 +256,39 @@
   }
   .about-us .section-paragraph, .products .section-paragraph, .customers .section-paragraph, .team .section-paragraph, .portfolio .section-paragraph {
     font: 400 1.1rem "Montserrat", sans-serif;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us, .products, .customers, .team, .portfolio {
+    padding: 3rem 0 2rem;
+  }
+  .about-us .about-us-wrapper, .products .about-us-wrapper, .customers .about-us-wrapper, .team .about-us-wrapper, .portfolio .about-us-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .about-us .about-us-wrapper .text-wrapper, .products .about-us-wrapper .text-wrapper, .customers .about-us-wrapper .text-wrapper, .team .about-us-wrapper .text-wrapper, .portfolio .about-us-wrapper .text-wrapper {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .about-us .about-us-wrapper .fotos-wrapper, .products .about-us-wrapper .fotos-wrapper, .customers .about-us-wrapper .fotos-wrapper, .team .about-us-wrapper .fotos-wrapper, .portfolio .about-us-wrapper .fotos-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .about-us .about-us-wrapper .fotos-wrapper .about-us-foto, .products .about-us-wrapper .fotos-wrapper .about-us-foto, .customers .about-us-wrapper .fotos-wrapper .about-us-foto, .team .about-us-wrapper .fotos-wrapper .about-us-foto, .portfolio .about-us-wrapper .fotos-wrapper .about-us-foto {
+    height: 100%;
+    background: url(../images/pipes_03_600_400.jpg);
+    background-size: cover;
+    opacity: .8;
   }
 }
 
