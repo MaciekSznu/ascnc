@@ -211,14 +211,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
-  background-color: #57bc90;
+  padding: 3rem 1rem 1rem;
 }
 
 .about-us .section-title, .products .section-title, .customers .section-title, .team .section-title, .portfolio .section-title {
-  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
   font: 600 1.8rem "Montserrat", sans-serif;
   padding: 1rem 0;
+  color: #797979;
+  text-shadow: 4px 4px 2px rgba(109, 109, 109, 0), -2px -2px 0px rgba(109, 109, 109, 0);
 }
 
 .about-us .section-paragraph, .products .section-paragraph, .customers .section-paragraph, .team .section-paragraph, .portfolio .section-paragraph {
@@ -230,20 +232,16 @@
 @media (min-width: 768px) {
   .about-us, .products, .customers, .team, .portfolio {
     min-height: 400px;
-    padding: 2rem;
+    padding: 3rem 2rem 2rem;
   }
   .about-us .section-title, .products .section-title, .customers .section-title, .team .section-title, .portfolio .section-title {
     text-align: left;
     font: 700 2.8rem "Montserrat", sans-serif;
-    padding: 0 0 1rem;
+    padding: 2rem 0rem 1rem;
   }
   .about-us .section-paragraph, .products .section-paragraph, .customers .section-paragraph, .team .section-paragraph, .portfolio .section-paragraph {
     font: 400 1.1rem "Montserrat", sans-serif;
   }
-}
-
-.products, .customers {
-  background-color: whitesmoke;
 }
 
 .products .section-list, .customers .section-list {
@@ -257,14 +255,17 @@
 }
 
 @media (min-width: 768px) {
+  .products, .customers {
+    padding: 3rem 2rem 2rem;
+  }
   .products .section-list, .customers .section-list {
     font: 400 1.1rem "Montserrat", sans-serif;
     line-height: 140%;
+    margin-left: .5rem;
   }
 }
 
 .team {
-  background-color: lightcyan;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -334,6 +335,9 @@
   .team {
     padding: 2rem 1rem;
   }
+  .team .section-title {
+    padding: 3rem 0 2rem 1rem;
+  }
   .team .team-wrapper .team-member .foto-description {
     font: 500 1.2rem "Montserrat", sans-serif;
   }
@@ -401,19 +405,22 @@
 }
 
 .portfolio {
-  background-color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   display: block;
-  padding: 0;
+  padding: 3rem 0;
   margin: 0;
 }
 
 .portfolio .potfolio-wrapper {
   margin: 0;
   padding: 0;
+}
+
+.portfolio .section-title {
+  padding: 1rem 0 1rem 1rem;
 }
 
 .portfolio .portfolio-items-wrapper {
@@ -537,14 +544,18 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1rem;
-  background-color: #57bc90;
-  margin-bottom: 50px;
+  background-color: #6d6d6d;
+  margin-bottom: 40px;
 }
 
 .contact .section-title {
-  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
   font: 600 1.8rem "Montserrat", sans-serif;
+  letter-spacing: 3px;
   padding: 1rem 0;
+  color: #f6f5f5;
+  text-shadow: 4px 4px 2px rgba(109, 109, 109, 0), -2px -2px 0px rgba(109, 109, 109, 0);
 }
 
 .contact .contact-wrapper {
@@ -577,6 +588,7 @@
 .contact .contact-wrapper .contact-paragraph {
   margin-bottom: 5px;
   font: 400 0.8rem "Montserrat", sans-serif;
+  color: #f6f5f5;
 }
 
 .contact .contact-wrapper .contact-paragraph a {
@@ -593,7 +605,7 @@
     width: 100%;
     text-align: left;
     font: 700 2.8rem "Montserrat", sans-serif;
-    padding: 1rem 1rem 2rem;
+    padding: 0 0 2rem;
   }
   .contact .contact-wrapper {
     -ms-flex-pack: distribute;
@@ -604,7 +616,7 @@
     width: 15%;
   }
   .contact .contact-wrapper .contact-properties p:first-of-type {
-    height: 30px;
+    height: 38px;
   }
   .contact .contact-wrapper .contact-values {
     text-align: left;
@@ -652,7 +664,7 @@ html {
 
 body {
   width: 100vw;
-  background-color: #fff;
+  background-color: #f6f5f5;
   font-family: "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;

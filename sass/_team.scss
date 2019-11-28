@@ -1,7 +1,6 @@
 .team {
   @extend .about-us;
 
-  background-color: lightcyan;
   flex-direction: column;
 
   .team-wrapper {
@@ -42,6 +41,10 @@
 
   @media (min-width: $media-tablet-size) {
     padding: 2rem 1rem;
+
+    .section-title {
+      padding: 3rem 0 2rem 1rem;
+    }
 
     .team-wrapper {
       .team-member {

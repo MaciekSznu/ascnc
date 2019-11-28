@@ -1,13 +1,15 @@
 .about-us {
   @include mobile-boxing;
   @include flex-center-center;
-  padding: 1rem;
-  background-color: $hero-bg-color;
+  padding: 3rem 1rem 1rem;
 
   .section-title {
-    text-align: center;
+    width:100%;
+    text-transform: uppercase;
     font: $section-title-font;
     padding: 1rem 0;
+    color: $section-title-text-color;
+    text-shadow: 4px 4px 2px $section-title-shadow-color, -2px -2px 0px $section-title-shadow-color;
   }
 
   .section-paragraph {
@@ -18,12 +20,12 @@
 
   @media (min-width: $media-tablet-size) {
     min-height: 400px;
-    padding: 2rem;
+    padding: 3rem 2rem 2rem;
 
     .section-title {
       text-align: left;
       font: $section-title-tablet-font;
-      padding: 0 0 1rem;
+      padding: 2rem 0rem 1rem;
     }
 
     .section-paragraph {

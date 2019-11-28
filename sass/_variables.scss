@@ -10,7 +10,13 @@ $max-media-mobile-size: 767px;
 $media-desktop-size: 1280px;
 $body-max-width: 1280px;
 
-$body-bg-color: #fff;
+$body-bg-color: rgb(246, 245, 245);
+$contact-bg-color: rgb(109, 109, 109);
+$section-title-text-color: rgb(121, 121, 121);
+$section-title-shadow-color: rgba(109, 109, 109, 0);
+$contact-title-text-color: rgb(246, 245, 245);
+$contact-title-shadow-color: rgba(109, 109, 109, .0);
+$contact-paragraph-text-color: rgb(246, 245, 245);
 $logo-bg-color: rgba(251, 250, 251, 0.9);
 $mobile-menu-bg-color: rgba(251, 250, 251, 0.9);
 $tile-color-primary: blue;
@@ -67,7 +73,7 @@ $team-description-font: 500 1.25rem "Barlow Condensed", sans-serif;
 $desktop-menu-font: 700 22px "Thasadith", sans-serif;
 
 $mobile-menu-width: 100vw;
-$mobile-menu-height: 50px;
+$mobile-menu-height: 40px;
 $content-box-width: 100vw;
 $tablet-menu-min-width: 180px;
 $desktop-menu-min-width: 220px;

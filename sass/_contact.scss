@@ -3,13 +3,18 @@
   @include flex-center-center;
   flex-direction: column;
   padding: 1rem;
-  background-color: $hero-bg-color;
+  background-color: $contact-bg-color;
   margin-bottom: $mobile-menu-height;
 
   .section-title {
-    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
     font: $section-title-font;
+    letter-spacing: 3px;
     padding: 1rem 0;
+    color: $contact-title-text-color;
+    text-shadow: 4px 4px 2px $contact-title-shadow-color,
+      -2px -2px 0px $contact-title-shadow-color;
   }
 
   .contact-wrapper {
@@ -35,6 +40,7 @@
     .contact-paragraph {
       margin-bottom: 5px;
       font: $mobile-contact-font;
+      color: $contact-paragraph-text-color;
 
       a {
         text-decoration: none;
@@ -42,11 +48,6 @@
       }
     }
   }
-  // .section-paragraph {
-  //   text-align: left;
-  //   font: $section-paragraph-font;
-  //   padding: 1rem 0;
-  // }
 
   @media (min-width: $media-tablet-size) {
     min-height: 200px;
@@ -56,7 +57,7 @@
       width: 100%;
       text-align: left;
       font: $section-title-tablet-font;
-      padding: 1rem 1rem 2rem;
+      padding: 0 0 2rem;
     }
 
     .contact-wrapper {
@@ -66,7 +67,7 @@
         width: 15%;
 
         p:first-of-type {
-          height: 30px;
+          height: 38px;
         }
       }
 

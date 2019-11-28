@@ -1,8 +1,6 @@
 .products {
   @extend .about-us;
 
-  background-color: whitesmoke;
-
   .section-list {
     text-align: left;
     font: $section-paragraph-font;
@@ -14,9 +12,12 @@
   }
 
   @media (min-width: $media-tablet-size) {
+    padding: 3rem 2rem 2rem;
+
     .section-list {
       font: $section-paragraph-tablet-font;
       line-height: 140%;
+      margin-left: .5rem;
     }
   }
 }
