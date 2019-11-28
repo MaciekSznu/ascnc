@@ -44,12 +44,5 @@ const portfolioSlider =
       new Siema({
         selector: '.portfolio-items-wrapper',
         loop: true,
-        perPage: 4,
+        perPage: 2,
       });
-
-// import { tns } from '../node_modules/tiny-slider/src/tiny-slider.js';
-
-// const protfolioSlider = tns({
-//   container: '.portfolio-items-wrapper',
-//   items: 1,
-// });

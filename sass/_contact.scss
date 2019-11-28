@@ -87,4 +87,8 @@
       }
     }
   }
+
+  @media (min-width: $media-desktop-size) {
+    max-width: 100vw;
+  }
 }

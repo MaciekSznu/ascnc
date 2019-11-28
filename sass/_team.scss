@@ -56,4 +56,18 @@
       }
     }
   }
+
+  @media (min-width: $media-desktop-size) {
+    .team-wrapper {
+      .team-member {
+        .foto {
+          max-width: 220px;
+          max-height: 220px;
+          &-description {
+            font: $foto-description-tablet-font;
+          }
+        }
+      }
+    }
+  }
 }

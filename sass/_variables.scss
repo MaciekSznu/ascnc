@@ -7,8 +7,8 @@ $hero-text-color: #a5a5af;
 
 $media-tablet-size: 768px;
 $max-media-mobile-size: 767px;
-$media-desktop-size: 1280px;
-$body-max-width: 1280px;
+$media-desktop-size: 1200px;
+// $body-max-width: 1280px;
 
 $body-bg-color: rgb(246, 245, 245);
 $contact-bg-color: rgb(109, 109, 109);
@@ -63,7 +63,9 @@ $customers-item-logo-width: calc((100vw - 32px) * 0.4);
 $portfolio-item-mobile-width: 100vw;
 $portfolio-item-tablet-width: 50vw;
 $portfolio-item-mobile-height: calc(100vw / 4 * 3);
-$portfolio-item-tablet-height: calc(100vw / 4 * 3);
+$portfolio-item-tablet-height: calc(50vw / 4 * 3);
+$portfolio-item-desktop-max-width: 600px;
+$portfolio-item-desktop-max-height: calc(#{$portfolio-item-desktop-max-width} / 4 * 3);
 
 $content-box-header-font: 700 2rem "Montserrat", sans-serif;
 $logo-font: 600 26px "Montserrat", sans-serif;

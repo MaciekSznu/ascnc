@@ -35,4 +35,16 @@
       }
     }
   }
+
+  @media (min-width: $media-desktop-size) {
+    .customers-wrapper {
+      justify-content: space-between;
+      .customers-item {
+        &-logo {
+          max-width: 220px;
+          max-height: 220px;
+        }
+      }
+    }
+  }
 }

@@ -86,9 +86,36 @@
         .foto {
           width: $portfolio-item-tablet-width;
           height: $portfolio-item-tablet-height;
+          max-width: $portfolio-item-tablet-width;
+          max-height: $portfolio-item-tablet-height;
 
           &-description-wrapper {
             height: $portfolio-item-tablet-height;
+            max-height: $portfolio-item-tablet-height;
+
+            .foto-description {
+              font: $portfolio-desription-tablet-font;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: $media-desktop-size) {
+    margin: 0 auto;
+
+    .portfolio-items-wrapper {
+      .portfolio-item {
+        .foto {
+          width: $portfolio-item-tablet-width;
+          height: $portfolio-item-tablet-height;
+          max-width: $portfolio-item-desktop-max-width;
+          max-height: $portfolio-item-desktop-max-height;
+
+          &-description-wrapper {
+            height: $portfolio-item-tablet-height;
+            max-height: $portfolio-item-desktop-max-height;
 
             .foto-description {
               font: $portfolio-desription-tablet-font;
