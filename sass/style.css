@@ -279,12 +279,12 @@
         -ms-flex: 2;
             flex: 2;
   }
-  .about-us .about-us-wrapper .fotos-wrapper, .products .about-us-wrapper .fotos-wrapper, .customers .about-us-wrapper .fotos-wrapper, .team .about-us-wrapper .fotos-wrapper, .portfolio .about-us-wrapper .fotos-wrapper {
+  .about-us .about-us-wrapper .about-us-fotos-wrapper, .products .about-us-wrapper .about-us-fotos-wrapper, .customers .about-us-wrapper .about-us-fotos-wrapper, .team .about-us-wrapper .about-us-fotos-wrapper, .portfolio .about-us-wrapper .about-us-fotos-wrapper {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  .about-us .about-us-wrapper .fotos-wrapper .about-us-foto, .products .about-us-wrapper .fotos-wrapper .about-us-foto, .customers .about-us-wrapper .fotos-wrapper .about-us-foto, .team .about-us-wrapper .fotos-wrapper .about-us-foto, .portfolio .about-us-wrapper .fotos-wrapper .about-us-foto {
+  .about-us .about-us-wrapper .about-us-fotos-wrapper .about-us-foto, .products .about-us-wrapper .about-us-fotos-wrapper .about-us-foto, .customers .about-us-wrapper .about-us-fotos-wrapper .about-us-foto, .team .about-us-wrapper .about-us-fotos-wrapper .about-us-foto, .portfolio .about-us-wrapper .about-us-fotos-wrapper .about-us-foto {
     height: 100%;
     background: url(../images/pipes_03_600_400.jpg);
     background-size: cover;
@@ -313,6 +313,72 @@
     font: 400 1.1rem "Montserrat", sans-serif;
     line-height: 140%;
     margin-left: .5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .products, .customers {
+    padding: 3rem 0 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .products .products-wrapper, .customers .products-wrapper {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .products .products-wrapper .section-title, .customers .products-wrapper .section-title, .products .products-wrapper .section-list, .customers .products-wrapper .section-list {
+    padding-left: 2rem;
+  }
+  .products .products-wrapper .section-list, .customers .products-wrapper .section-list {
+    margin-left: 1.5rem;
+  }
+  .products .products-fotos-wrapper, .customers .products-fotos-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 400px;
+    height: 390px;
+  }
+  .products .products-fotos-wrapper .product-foto, .customers .products-fotos-wrapper .product-foto {
+    width: 200px;
+    height: auto;
+    opacity: .8;
+  }
+  .products .products-fotos-wrapper .product-foto:nth-of-type(1), .customers .products-fotos-wrapper .product-foto:nth-of-type(1) {
+    background: url(../images/draw_02_300_200.jpg);
+    background-size: cover;
+  }
+  .products .products-fotos-wrapper .product-foto:nth-of-type(2), .customers .products-fotos-wrapper .product-foto:nth-of-type(2) {
+    background: url(../images/cranes_01_300_200.jpg);
+    background-size: cover;
+  }
+  .products .products-fotos-wrapper .product-foto:nth-of-type(3), .customers .products-fotos-wrapper .product-foto:nth-of-type(3) {
+    background: url(../images/pipes_02_300_200.jpg) center;
+    background-size: cover;
+  }
+  .products .products-fotos-wrapper .product-foto:nth-of-type(4), .customers .products-fotos-wrapper .product-foto:nth-of-type(4) {
+    background: url(../images/draw_04_356_200.jpg);
+    background-size: cover;
   }
 }
 

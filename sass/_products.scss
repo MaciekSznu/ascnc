@@ -21,4 +21,60 @@
       margin-left: .5rem;
     }
   }
+
+  @media (min-width: $media-desktop-size) {
+    padding: 3rem 0 2rem;
+
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+
+    .products-wrapper {
+      flex: 2;
+
+      .section-title, .section-list {
+        padding-left: 2rem;
+      }
+
+      .section-list {
+        margin-left: 1.5rem;
+      }
+    }
+
+    .products-fotos-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      flex: 1;
+      width: 400px;
+      height: 390px;
+
+      .product-foto {
+        width: 200px;
+        height: auto;
+        opacity: .8;
+
+        &:nth-of-type(1) {
+          background: url(../images/draw_02_300_200.jpg);
+          background-size: cover;
+        }
+
+        &:nth-of-type(2) {
+          background: url(../images/cranes_01_300_200.jpg);
+          background-size: cover;
+        }
+
+        &:nth-of-type(3) {
+          background: url(../images/pipes_02_300_200.jpg) center;
+          background-size: cover;
+        }
+
+        &:nth-of-type(4) {
+          background: url(../images/draw_04_356_200.jpg);
+          background-size: cover;
+        }
+      }
+    }
+  }
 }
