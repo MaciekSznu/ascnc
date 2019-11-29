@@ -12,6 +12,7 @@
 
     .customers-item {
       display: flex;
+      margin-bottom: 1rem;
 
       &-logo {
         width: $customers-item-logo-width;
@@ -21,6 +22,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background: white;
 
         &-img {
           width: 100%;
@@ -33,16 +35,69 @@
           }
         }
       }
+
+      .customer-description-wrapper {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: $media-tablet-size) {
+    .customers-wrapper {
+      justify-content: space-between;
+      .customers-item {
+        width: 170px;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 
   @media (min-width: $media-desktop-size) {
+    .section-title {
+      text-align: center;
+    }
+
     .customers-wrapper {
-      justify-content: space-between;
       .customers-item {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+
+        .customer-description-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+          position: absolute;
+          height: 70%;
+          background: transparent;
+          z-index: -10;
+// NIE DZIAŁA HOVER DO POPRAWY
+          .customer-description {
+            font: $customer-description-desktop-font;
+          }
+        }
+
         &-logo {
           max-width: 220px;
           max-height: 220px;
+
+          &-img {
+            width: 100%;
+            filter: grayscale(100%);
+            opacity: 0.6;
+  
+            &:hover {
+              filter: none;
+              opacity: 0.9;
+              .customer-description-wrapper {
+                z-index: 10;
+              }
+            }
+          }
         }
       }
     }

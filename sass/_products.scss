@@ -61,18 +61,21 @@
         }
 
         &:nth-of-type(2) {
-          background: url(../images/cranes_01_300_200.jpg);
+          background: url(../images/cranes_01_300_200.jpg) 70%;
           background-size: cover;
+          filter: brightness(120%) contrast(110%);
         }
 
         &:nth-of-type(3) {
           background: url(../images/pipes_02_300_200.jpg) center;
           background-size: cover;
+          filter: brightness(110%) contrast(110%);
         }
 
         &:nth-of-type(4) {
           background: url(../images/draw_04_356_200.jpg);
           background-size: cover;
+          filter: brightness(100%) grayscale(100%);
         }
       }
     }

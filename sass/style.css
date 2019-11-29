@@ -369,16 +369,22 @@
     background-size: cover;
   }
   .products .products-fotos-wrapper .product-foto:nth-of-type(2), .customers .products-fotos-wrapper .product-foto:nth-of-type(2) {
-    background: url(../images/cranes_01_300_200.jpg);
+    background: url(../images/cranes_01_300_200.jpg) 70%;
     background-size: cover;
+    -webkit-filter: brightness(120%) contrast(110%);
+            filter: brightness(120%) contrast(110%);
   }
   .products .products-fotos-wrapper .product-foto:nth-of-type(3), .customers .products-fotos-wrapper .product-foto:nth-of-type(3) {
     background: url(../images/pipes_02_300_200.jpg) center;
     background-size: cover;
+    -webkit-filter: brightness(110%) contrast(110%);
+            filter: brightness(110%) contrast(110%);
   }
   .products .products-fotos-wrapper .product-foto:nth-of-type(4), .customers .products-fotos-wrapper .product-foto:nth-of-type(4) {
     background: url(../images/draw_04_356_200.jpg);
     background-size: cover;
+    -webkit-filter: brightness(100%) grayscale(100%);
+            filter: brightness(100%) grayscale(100%);
   }
 }
 
@@ -461,6 +467,9 @@
 }
 
 @media (min-width: 1200px) {
+  .team .section-title {
+    text-align: center;
+  }
   .team .team-wrapper .team-member .foto {
     max-width: 220px;
     max-height: 220px;
@@ -500,6 +509,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 1rem;
 }
 
 .customers .customers-wrapper .customers-item-logo {
@@ -516,6 +526,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: white;
 }
 
 .customers .customers-wrapper .customers-item-logo-img {
@@ -531,15 +542,81 @@
   opacity: 0.9;
 }
 
-@media (min-width: 1200px) {
+.customers .customers-wrapper .customers-item .customer-description-wrapper {
+  display: none;
+}
+
+@media (min-width: 768px) {
   .customers .customers-wrapper {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .customers .customers-wrapper .customers-item {
+    width: 170px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .customers .section-title {
+    text-align: center;
+  }
+  .customers .customers-wrapper .customers-item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .customers .customers-wrapper .customers-item .customer-description-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    height: 70%;
+    background: transparent;
+    z-index: -10;
+  }
+  .customers .customers-wrapper .customers-item .customer-description-wrapper .customer-description {
+    font: 600 1rem "Montserrat", sans-serif;
+  }
   .customers .customers-wrapper .customers-item-logo {
     max-width: 220px;
     max-height: 220px;
+  }
+  .customers .customers-wrapper .customers-item-logo-img {
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    opacity: 0.6;
+  }
+  .customers .customers-wrapper .customers-item-logo-img:hover {
+    -webkit-filter: none;
+            filter: none;
+    opacity: 0.9;
+  }
+  .customers .customers-wrapper .customers-item-logo-img:hover .customer-description-wrapper {
+    z-index: 10;
   }
 }
 
