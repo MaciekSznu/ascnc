@@ -22,7 +22,7 @@ hamburgerButton.addEventListener('click', (e) => {
   hideMobileMenu();
 });
 
-const mobileMenuItems = document.querySelectorAll('.menu__list-item a');
+const mobileMenuItems = document.querySelectorAll('.mobile-menu__list-item a');
 const documentSections = document.querySelectorAll('*[id^="section"]');
 const documentSectionsArray = [...documentSections];
 

@@ -1,4 +1,4 @@
-.menu {
+.mobile-menu {
   position: fixed;
   bottom: 0;
   z-index: 10;
@@ -78,8 +78,11 @@
       }
     }
   }
+  @media (min-width: $media-desktop-size) {
+    display: none;
+  }
 }
 
-.menu.mobile-hidden {
+.mobile-menu.mobile-hidden {
   bottom: -240px;
 }

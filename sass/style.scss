@@ -9,6 +9,8 @@
 @import "_customers.scss";
 @import "_portfolio.scss";
 @import "_contact.scss";
+@import "_desktop-menu.scss";
+
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap");
 
@@ -51,4 +53,8 @@ body {
 .header {
   width: 100%;
   height: $logo-height;
+  background: $logo-bg-color;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }

@@ -45,4 +45,12 @@
       background-color: $logo-item-color-5;
     }
   }
+
+  @media (min-width: $media-desktop-size) {
+    margin-left: $desktop-logo-margin-left;
+    padding-left: 2rem;
+    justify-content: flex-start;
+    width: $desktop-logo-width;
+  }
+  
 }
