@@ -730,6 +730,9 @@
   .portfolio {
     margin: 0 auto;
   }
+  .portfolio .section-title {
+    padding: 2rem;
+  }
   .portfolio .portfolio-items-wrapper .portfolio-item .foto {
     width: 50vw;
     height: calc(50vw / 4 * 3);
