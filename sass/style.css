@@ -67,7 +67,7 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    width: calc(20% + 2rem);
+    width: 30%;
   }
 }
 
@@ -859,62 +859,65 @@
 }
 
 .desktop-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 60px;
-  width: calc(1200px * 0.7);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(251, 250, 251, 0.9);
-  z-index: 100;
-  margin-right: calc(((100vw - 1200px) / 2) - 1rem - 1px);
+  display: none;
 }
 
-.desktop-menu__list {
-  width: 100%;
-  list-style: none;
-  padding-left: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  opacity: 1;
-  font: 500 1.2rem "Montserrat", sans-serif;
-}
-
-.desktop-menu__list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 40px;
-  line-height: 40px;
-  color: #015249;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.desktop-menu__list-item:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+@media (min-width: 1200px) {
+  .desktop-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: calc(1200px * 0.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: rgba(251, 250, 251, 0.9);
+    z-index: 100;
+    margin-right: calc(((100vw - 1200px) / 2) - 1rem - 1px);
+  }
+  .desktop-menu__list {
+    width: 100%;
+    list-style: none;
+    padding-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    opacity: 1;
+    font: 500 1.2rem "Montserrat", sans-serif;
+  }
+  .desktop-menu__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 40px;
+    line-height: 40px;
+    color: #015249;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .desktop-menu__list-item:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 
 *,

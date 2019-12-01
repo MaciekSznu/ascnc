@@ -1,38 +1,44 @@
 .desktop-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: $logo-height;
-  width: $desktop-menu-width;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: $logo-bg-color;
-  z-index: 100;
-  margin-right: $desktop-menu-margin-right;
+  display: none;
+}
 
-  &__list {
-    width: 100%;
-    list-style: none;
-    padding-left: 0px;
+@media (min-width: $media-desktop-size) {
+  .desktop-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: $logo-height;
+    width: $desktop-menu-width;
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    opacity: 1;
-    font: $desktop-menu-font;
+    justify-content: space-around;
+    align-items: center;
+    background: $logo-bg-color;
+    z-index: 100;
+    margin-right: $desktop-menu-margin-right;
 
-    &-item {
+    &__list {
+      width: 100%;
+      list-style: none;
+      padding-left: 0px;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 40px;
-      line-height: 40px;
-      color: $nav-text-color;
-      text-transform: uppercase;
-      cursor: pointer;
+      justify-content: space-evenly;
+      flex-direction: row;
+      opacity: 1;
+      font: $desktop-menu-font;
 
-      &:hover {
-        transform: scale(1.1);
+      &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        line-height: 40px;
+        color: $nav-text-color;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }

@@ -74,7 +74,7 @@ $portfolio-item-desktop-max-height: calc(
   #{$portfolio-item-desktop-max-width} / 4 * 3
 );
 $desktop-logo-margin-left: calc((100vw - 1200px) / 2);
-$desktop-logo-width: calc(20% + 2rem);
+$desktop-logo-width: 30%;
 $desktop-menu-width: calc(1200px * 0.7);
 $desktop-menu-margin-right: calc(((100vw - 1200px) / 2) - 1rem - 1px);
 $content-box-header-font: 700 2rem "Montserrat", sans-serif;
