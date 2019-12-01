@@ -35,6 +35,7 @@ a {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .display-none {
@@ -48,6 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .header {

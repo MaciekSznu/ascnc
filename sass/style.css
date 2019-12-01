@@ -944,6 +944,7 @@ a {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .display-none {
@@ -964,6 +965,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow-x: hidden;
 }
 
 .header {
