@@ -249,7 +249,7 @@
 .about-us .section-title, .products .section-title, .customers .section-title, .team .section-title, .portfolio .section-title {
   width: 100%;
   text-transform: uppercase;
-  font: 600 1.8rem "Montserrat", sans-serif;
+  font: 600 1.9rem "Montserrat", sans-serif;
   padding: 1rem 0;
   color: #797979;
   text-shadow: 4px 4px 2px rgba(109, 109, 109, 0), -2px -2px 0px rgba(109, 109, 109, 0);
@@ -257,7 +257,7 @@
 
 .about-us .section-paragraph, .products .section-paragraph, .customers .section-paragraph, .team .section-paragraph, .portfolio .section-paragraph {
   text-align: left;
-  font: 400 1rem "Montserrat", sans-serif;
+  font: 400 0.9rem "Montserrat", sans-serif;
   padding: 1rem 0;
 }
 
@@ -291,17 +291,17 @@
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  .about-us .about-us-wrapper .text-wrapper, .products .about-us-wrapper .text-wrapper, .customers .about-us-wrapper .text-wrapper, .team .about-us-wrapper .text-wrapper, .portfolio .about-us-wrapper .text-wrapper {
+  .about-us .about-us-wrapper__text-wrapper, .products .about-us-wrapper__text-wrapper, .customers .about-us-wrapper__text-wrapper, .team .about-us-wrapper__text-wrapper, .portfolio .about-us-wrapper__text-wrapper {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
   }
-  .about-us .about-us-wrapper .about-us-fotos-wrapper, .products .about-us-wrapper .about-us-fotos-wrapper, .customers .about-us-wrapper .about-us-fotos-wrapper, .team .about-us-wrapper .about-us-fotos-wrapper, .portfolio .about-us-wrapper .about-us-fotos-wrapper {
+  .about-us .about-us-wrapper__photos-wrapper, .products .about-us-wrapper__photos-wrapper, .customers .about-us-wrapper__photos-wrapper, .team .about-us-wrapper__photos-wrapper, .portfolio .about-us-wrapper__photos-wrapper {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  .about-us .about-us-wrapper .about-us-fotos-wrapper .about-us-foto, .products .about-us-wrapper .about-us-fotos-wrapper .about-us-foto, .customers .about-us-wrapper .about-us-fotos-wrapper .about-us-foto, .team .about-us-wrapper .about-us-fotos-wrapper .about-us-foto, .portfolio .about-us-wrapper .about-us-fotos-wrapper .about-us-foto {
+  .about-us .about-us-wrapper__photos-wrapper .about-us-photo, .products .about-us-wrapper__photos-wrapper .about-us-photo, .customers .about-us-wrapper__photos-wrapper .about-us-photo, .team .about-us-wrapper__photos-wrapper .about-us-photo, .portfolio .about-us-wrapper__photos-wrapper .about-us-photo {
     height: 100%;
     background: url(../images/pipes_03_600_400.jpg);
     background-size: cover;
@@ -311,7 +311,7 @@
 
 .products .section-list, .customers .section-list {
   text-align: left;
-  font: 400 1rem "Montserrat", sans-serif;
+  font: 400 0.9rem "Montserrat", sans-serif;
   padding: 1rem;
 }
 
@@ -346,18 +346,18 @@
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  .products .products-wrapper, .customers .products-wrapper {
+  .products .products-text-wrapper, .customers .products-text-wrapper {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
   }
-  .products .products-wrapper .section-title, .customers .products-wrapper .section-title, .products .products-wrapper .section-list, .customers .products-wrapper .section-list {
+  .products .products-text-wrapper .section-title, .customers .products-text-wrapper .section-title, .products .products-text-wrapper .section-list, .customers .products-text-wrapper .section-list {
     padding-left: 2rem;
   }
-  .products .products-wrapper .section-list, .customers .products-wrapper .section-list {
+  .products .products-text-wrapper .section-list, .customers .products-text-wrapper .section-list {
     margin-left: 1.5rem;
   }
-  .products .products-fotos-wrapper, .customers .products-fotos-wrapper {
+  .products .products-photos-wrapper, .customers .products-photos-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -376,28 +376,28 @@
     width: 400px;
     height: 390px;
   }
-  .products .products-fotos-wrapper .product-foto, .customers .products-fotos-wrapper .product-foto {
+  .products .products-photos-wrapper .product-photo, .customers .products-photos-wrapper .product-photo {
     width: 200px;
     height: auto;
     opacity: .8;
   }
-  .products .products-fotos-wrapper .product-foto:nth-of-type(1), .customers .products-fotos-wrapper .product-foto:nth-of-type(1) {
+  .products .products-photos-wrapper .product-photo:nth-of-type(1), .customers .products-photos-wrapper .product-photo:nth-of-type(1) {
     background: url(../images/draw_02_300_200.jpg);
     background-size: cover;
   }
-  .products .products-fotos-wrapper .product-foto:nth-of-type(2), .customers .products-fotos-wrapper .product-foto:nth-of-type(2) {
+  .products .products-photos-wrapper .product-photo:nth-of-type(2), .customers .products-photos-wrapper .product-photo:nth-of-type(2) {
     background: url(../images/cranes_01_300_200.jpg) 70%;
     background-size: cover;
     -webkit-filter: brightness(120%) contrast(110%);
             filter: brightness(120%) contrast(110%);
   }
-  .products .products-fotos-wrapper .product-foto:nth-of-type(3), .customers .products-fotos-wrapper .product-foto:nth-of-type(3) {
+  .products .products-photos-wrapper .product-photo:nth-of-type(3), .customers .products-photos-wrapper .product-photo:nth-of-type(3) {
     background: url(../images/pipes_02_300_200.jpg) center;
     background-size: cover;
     -webkit-filter: brightness(110%) contrast(110%);
             filter: brightness(110%) contrast(110%);
   }
-  .products .products-fotos-wrapper .product-foto:nth-of-type(4), .customers .products-fotos-wrapper .product-foto:nth-of-type(4) {
+  .products .products-photos-wrapper .product-photo:nth-of-type(4), .customers .products-photos-wrapper .product-photo:nth-of-type(4) {
     background: url(../images/draw_04_356_200.jpg);
     background-size: cover;
     -webkit-filter: brightness(100%) grayscale(100%);
@@ -425,7 +425,7 @@
   width: 100%;
 }
 
-.team .team-wrapper .team-member {
+.team .team-wrapper .team-member-wrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -443,7 +443,7 @@
   margin-bottom: 2rem;
 }
 
-.team .team-wrapper .team-member .foto {
+.team .team-wrapper .team-member-wrapper .team-member__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,12 +462,12 @@
   overflow: hidden;
 }
 
-.team .team-wrapper .team-member .foto .team-member-foto {
+.team .team-wrapper .team-member-wrapper .team-member__item .team-member__item-photo {
   height: 100%;
 }
 
-.team .team-wrapper .team-member .foto-description {
-  font: 400 1rem "Montserrat", sans-serif;
+.team .team-wrapper .team-member-wrapper .team-member__item-description {
+  font: 400 1.1rem "Montserrat", sans-serif;
   text-align: center;
 }
 
@@ -478,7 +478,7 @@
   .team .section-title {
     padding: 3rem 0 2rem 1rem;
   }
-  .team .team-wrapper .team-member .foto-description {
+  .team .team-wrapper .team-member-wrapper .team-member__item-description {
     font: 500 1.2rem "Montserrat", sans-serif;
   }
 }
@@ -487,11 +487,11 @@
   .team .section-title {
     text-align: center;
   }
-  .team .team-wrapper .team-member .foto {
+  .team .team-wrapper .team-member-wrapper .team-member__item {
     max-width: 220px;
     max-height: 220px;
   }
-  .team .team-wrapper .team-member .foto-description {
+  .team .team-wrapper .team-member-wrapper .team-member__item-description {
     font: 500 1.2rem "Montserrat", sans-serif;
   }
 }
@@ -522,14 +522,14 @@
   width: 100%;
 }
 
-.customers .customers-wrapper .customers-item {
+.customers .customers-wrapper .customers__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1rem;
 }
 
-.customers .customers-wrapper .customers-item-logo {
+.customers .customers-wrapper .customers__item-logo {
   width: calc((100vw - 32px) * 0.4);
   max-width: 140px;
   height: calc((100vw - 32px) * 0.4);
@@ -546,21 +546,17 @@
   background: white;
 }
 
-.customers .customers-wrapper .customers-item-logo-img {
+.customers .customers-wrapper .customers__item-logo-img {
   width: 100%;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   opacity: 0.6;
 }
 
-.customers .customers-wrapper .customers-item-logo:hover img {
+.customers .customers-wrapper .customers__item-logo:hover img {
   -webkit-filter: none;
           filter: none;
   opacity: 0.9;
-}
-
-.customers .customers-wrapper .customers-item .customer-description-wrapper {
-  display: none;
 }
 
 @media (min-width: 768px) {
@@ -569,7 +565,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .customers .customers-wrapper .customers-item {
+  .customers .customers-wrapper .customers__item {
     width: 170px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -584,7 +580,7 @@
   .customers .section-title {
     text-align: center;
   }
-  .customers .customers-wrapper .customers-item {
+  .customers .customers-wrapper .customers__item {
     position: relative;
     width: 300px;
     height: 300px;
@@ -595,7 +591,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .customers .customers-wrapper .customers-item-logo {
+  .customers .customers-wrapper .customers__item-logo {
     max-width: 220px;
     max-height: 220px;
   }
@@ -633,7 +629,7 @@
   width: 100%;
 }
 
-.portfolio .portfolio-items-wrapper .portfolio-item {
+.portfolio .portfolio-items-wrapper .portfolio__item {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,7 +646,7 @@
           align-items: center;
 }
 
-.portfolio .portfolio-items-wrapper .portfolio-item .foto {
+.portfolio .portfolio-items-wrapper .portfolio__item-photo {
   position: relative;
   width: 100vw;
   max-width: 414px;
@@ -658,13 +654,13 @@
   max-height: 300px;
 }
 
-.portfolio .portfolio-items-wrapper .portfolio-item .foto .portfolio-foto {
+.portfolio .portfolio-items-wrapper .portfolio__item-photo-img {
   width: 100%;
   height: inherit;
   max-height: inherit;
 }
 
-.portfolio .portfolio-items-wrapper .portfolio-item .foto-description-wrapper {
+.portfolio .portfolio-items-wrapper .portfolio__item-photo-description-wrapper {
   top: 0;
   opacity: 0;
   position: absolute;
@@ -687,18 +683,18 @@
   padding: 0 1rem 1rem;
 }
 
-.portfolio .portfolio-items-wrapper .portfolio-item .foto-description-wrapper .foto-description {
+.portfolio .portfolio-items-wrapper .portfolio__item-photo-description-wrapper .portfolio__item-photo-description {
   font: 500 1.2rem "Montserrat", sans-serif;
   text-align: left;
   color: white;
 }
 
-.portfolio .portfolio-items-wrapper .portfolio-item .foto:hover {
+.portfolio .portfolio-items-wrapper .portfolio__item-photo:hover {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
 
-.portfolio .portfolio-items-wrapper .portfolio-item .foto:hover .foto-description-wrapper {
+.portfolio .portfolio-items-wrapper .portfolio__item-photo:hover .portfolio__item-photo-description-wrapper {
   opacity: 1;
 }
 
@@ -711,17 +707,17 @@
     font: 700 2.8rem "Montserrat", sans-serif;
     padding: 1rem 2rem 2rem;
   }
-  .portfolio .portfolio-items-wrapper .portfolio-item .foto {
+  .portfolio .portfolio-items-wrapper .portfolio__item-photo {
     width: 50vw;
     height: calc(50vw / 4 * 3);
     max-width: 50vw;
     max-height: calc(50vw / 4 * 3);
   }
-  .portfolio .portfolio-items-wrapper .portfolio-item .foto-description-wrapper {
+  .portfolio .portfolio-items-wrapper .portfolio__item-photo-description-wrapper {
     height: calc(50vw / 4 * 3);
     max-height: calc(50vw / 4 * 3);
   }
-  .portfolio .portfolio-items-wrapper .portfolio-item .foto-description-wrapper .foto-description {
+  .portfolio .portfolio-items-wrapper .portfolio__item-photo-description-wrapper .portfolio__item-photo-description {
     font: 500 1.5rem "Montserrat", sans-serif;
   }
 }
@@ -733,17 +729,17 @@
   .portfolio .section-title {
     padding: 2rem;
   }
-  .portfolio .portfolio-items-wrapper .portfolio-item .foto {
+  .portfolio .portfolio-items-wrapper .portfolio__item-photo {
     width: 50vw;
     height: calc(50vw / 4 * 3);
     max-width: 600px;
     max-height: calc( 600px / 4 * 3);
   }
-  .portfolio .portfolio-items-wrapper .portfolio-item .foto-description-wrapper {
+  .portfolio .portfolio-items-wrapper .portfolio__item-photo-description-wrapper {
     height: calc(50vw / 4 * 3);
     max-height: calc( 600px / 4 * 3);
   }
-  .portfolio .portfolio-items-wrapper .portfolio-item .foto-description-wrapper .foto-description {
+  .portfolio .portfolio-items-wrapper .portfolio__item-photo-description-wrapper .portfolio__item-photo-description {
     font: 500 1.5rem "Montserrat", sans-serif;
   }
 }
@@ -773,7 +769,7 @@
 .contact .section-title {
   width: 100%;
   text-transform: uppercase;
-  font: 600 1.8rem "Montserrat", sans-serif;
+  font: 600 1.9rem "Montserrat", sans-serif;
   letter-spacing: 3px;
   padding: 1rem 0;
   color: #f6f5f5;

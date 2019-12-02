@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     width: 100%;
 
-    .customers-item {
+    .customers__item {
       display: flex;
       margin-bottom: 1rem;
 
@@ -35,17 +35,13 @@
           opacity: 0.9;
         }
       }
-
-      .customer-description-wrapper {
-        display: none;
-      }
     }
   }
 
   @media (min-width: $media-tablet-size) {
     .customers-wrapper {
       justify-content: space-between;
-      .customers-item {
+      .customers__item {
         width: 170px;
         justify-content: center;
         align-items: center;
@@ -59,7 +55,7 @@
     }
 
     .customers-wrapper {
-      .customers-item {
+      .customers__item {
         position: relative;
         width: 300px;
         height: 300px;

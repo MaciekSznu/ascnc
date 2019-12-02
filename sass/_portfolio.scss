@@ -21,21 +21,21 @@
     justify-content: center;
     width: 100%;
 
-    .portfolio-item {
+    .portfolio__item {
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
 
-      .foto {
+      &-photo {
         position: relative;
         width: $portfolio-item-mobile-width;
         max-width: 414px;
         height: $portfolio-item-mobile-height;
         max-height: 300px;
 
-        .portfolio-foto {
+        &-img {
           width: 100%;
           height: inherit;
           max-height: inherit;
@@ -54,7 +54,7 @@
           align-items: flex-start;
           padding: 0 1rem 1rem;
 
-          .foto-description {
+          .portfolio__item-photo-description {
             font: $portfolio-desription-font;
             text-align: left;
             color: white;
@@ -64,7 +64,7 @@
         &:hover {
           filter: grayscale(100%);
 
-          .foto-description-wrapper {
+          .portfolio__item-photo-description-wrapper {
             opacity: 1;
           }
         }
@@ -82,8 +82,8 @@
     }
 
     .portfolio-items-wrapper {
-      .portfolio-item {
-        .foto {
+      .portfolio__item {
+        &-photo {
           width: $portfolio-item-tablet-width;
           height: $portfolio-item-tablet-height;
           max-width: $portfolio-item-tablet-width;
@@ -93,7 +93,7 @@
             height: $portfolio-item-tablet-height;
             max-height: $portfolio-item-tablet-height;
 
-            .foto-description {
+            .portfolio__item-photo-description {
               font: $portfolio-desription-tablet-font;
             }
           }
@@ -110,8 +110,8 @@
     }
 
     .portfolio-items-wrapper {
-      .portfolio-item {
-        .foto {
+      .portfolio__item {
+        &-photo {
           width: $portfolio-item-tablet-width;
           height: $portfolio-item-tablet-height;
           max-width: $portfolio-item-desktop-max-width;
@@ -121,7 +121,7 @@
             height: $portfolio-item-tablet-height;
             max-height: $portfolio-item-desktop-max-height;
 
-            .foto-description {
+            .portfolio__item-photo-description {
               font: $portfolio-desription-tablet-font;
             }
           }

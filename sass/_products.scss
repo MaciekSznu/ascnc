@@ -29,7 +29,7 @@
     flex-direction: row-reverse;
     flex-wrap: nowrap;
 
-    .products-wrapper {
+    .products-text-wrapper {
       flex: 2;
 
       .section-title, .section-list {
@@ -41,7 +41,7 @@
       }
     }
 
-    .products-fotos-wrapper {
+    .products-photos-wrapper {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -50,7 +50,7 @@
       width: 400px;
       height: 390px;
 
-      .product-foto {
+      .product-photo {
         width: 200px;
         height: auto;
         opacity: .8;
