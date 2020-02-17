@@ -27,10 +27,7 @@ const documentSections = document.querySelectorAll('*[id^="section"]');
 const documentSectionsArray = [...documentSections];
 
 const scrollToSection = (i) => {
-
   documentSectionsArray[i].scrollIntoView()
-  //.then(scrollBelowLogo());
-
 };
 
 mobileMenuItems.forEach((item, index) => {
@@ -39,9 +36,3 @@ mobileMenuItems.forEach((item, index) => {
     hideMobileMenu();
   })
 });
-
-
-// mobileMenuItems.forEach(addEventListener('click', (e) => {
-//   mobileMenu.classList.toggle('mobile-hidden');
-// }));
-
